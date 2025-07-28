@@ -1,0 +1,32 @@
+{
+  "name": "item-manager-automation",
+  "version": "1.0.0",
+  "description": "Cypress automation tests for Item Manager Application",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run",
+    "test:open": "cypress open",
+    "test:headed": "cypress run --headed",
+    "test:chrome": "cypress run --browser chrome",
+    "test:firefox": "cypress run --browser firefox",
+    "test:edge": "cypress run --browser edge",
+    "test:auth": "cypress run --spec 'cypress/e2e/authentication.cy.js'",
+    "test:items": "cypress run --spec 'cypress/e2e/item-management.cy.js'",
+    "test:responsive": "cypress run --spec 'cypress/e2e/responsive-design.cy.js'",
+    "test:comprehensive": "cypress run --spec 'cypress/e2e/comprehensive-automation.cy.js'",
+    "test:all": "cypress run --spec 'cypress/e2e/*.cy.js'"
+  },
+  "keywords": [
+    "cypress",
+    "automation",
+    "testing",
+    "e2e",
+    "item-manager"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "cypress": "^14.5.3"
+  }
+} 
